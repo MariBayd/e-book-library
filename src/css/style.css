@@ -1,0 +1,48 @@
+body {
+    min-width: 1040px;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Arial", sans-serif;
+    color:  white;
+    background-image: url("img/books.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .main-page h1 {
+      margin-top: 120px;
+      padding: 0px;
+      font-size: 72px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      text-shadow: black 5px 0 5px;
+  }
+
+  .btn {
+      height: 60px;
+      width: 220px;
+      text-transform: uppercase;
+      background-color: transparent;
+      color: white;
+      font-weight: bold;
+      
+  }
+
+  .btn:first-child {
+      margin-right: 50px;
+  }
+
+  .btn:nth-child(2) {
+      margin-left: 50px;
+  }
+
+  .container {
+      display: flex;
+      height: 80px;
+      justify-content: center;
+  }
+
+
+

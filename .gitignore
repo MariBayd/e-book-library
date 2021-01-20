@@ -1,0 +1,6 @@
+#### Dependency directory
+node_modules
+package-lock.json
+src/package.json
+src/package-lock.json
+src/app.js
