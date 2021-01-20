@@ -1,9 +1,9 @@
 body {
     min-width: 1040px;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 60px;
     font-family: "Arial", sans-serif;
     color:  white;
     background-image: url("img/books.jpg");
@@ -12,13 +12,19 @@ body {
   }
 
   .main-page h1 {
-      margin-top: 120px;
+      margin-top: 100px;
       padding: 0px;
       font-size: 72px;
       text-align: center;
-      backdrop-filter: blur(10px);
       text-shadow: black 5px 0 5px;
   }
+
+  .container {
+    margin-top: 80px;
+    display: flex;
+    height: 90px;
+    justify-content: center;
+}
 
   .btn {
       height: 60px;
@@ -26,13 +32,27 @@ body {
       margin: 20px;
       padding: 15px;
       font-size: 20px;
+      font-weight: bold;
       text-transform: uppercase;
-      background-color: transparent;
+      background-color: #443826;
       text-shadow: black 5px 0 5px;
       color: white;
       border: 2px solid white;
       border-radius: 10px; 
-      backdrop-filter: blur(10px);
+      text-decoration: none; 
+      word-wrap: wrap;
+     
+  }
+
+  .background-btn {
+    height: 60px;
+    width: 400px;
+    border-radius: 10px; 
+    backdrop-filter: blur(5px);
+  }
+
+  .btn:hover {
+        color: rgb(255, 238, 206);
   }
 
   .btn:first-child {
@@ -43,11 +63,6 @@ body {
       margin-left: 50px;
   }
 
-  .container {
-      display: flex;
-      height: 80px;
-      justify-content: center;
-  }
 
 
 
