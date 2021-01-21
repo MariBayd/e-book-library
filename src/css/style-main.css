@@ -9,6 +9,7 @@ body {
     background-image: url("img/books.jpg");
     background-attachment: fixed;
     background-size: cover;
+    text-transform: uppercase;
   }
 
   .main-page h1 {
@@ -33,7 +34,7 @@ body {
       padding: 15px;
       font-size: 20px;
       font-weight: bold;
-      text-transform: uppercase;
+     
       background-color: transparent;
       text-shadow: black 5px 0 5px;
       color: white;
