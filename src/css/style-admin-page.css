@@ -85,4 +85,16 @@ h1 {
     font-size: 12px;
 }
 
+.btn-edit {
+    padding: 10px;
+    margin: -6px 0 0 -5px;
+    height: 20px;
+    text-decoration: none;
+    color:white;
+    font-size: 12px;
+    background-color: rgba(44,38,26, 0.9);
+    text-transform: uppercase;
+
+    }
+
 
