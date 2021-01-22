@@ -61,7 +61,7 @@ h1 {
 }
 
 .book-description {
-    font-size: 14px;
+    font-size: 12px;
     margin-top: 10px;
 }
 
@@ -79,6 +79,10 @@ h1 {
 .name-book {
     font-weight: bold;
     font-size: 16px;
+}
+
+.author-book {
+    font-size: 12px;
 }
 
 
