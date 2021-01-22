@@ -6,7 +6,6 @@ body {
     line-height: 20px;
     font-family: "Arial", sans-serif;
     color:  white;
-    background-color: #2d353b;
   }
 
 .header-logo  img {
@@ -15,10 +14,17 @@ body {
     border-radius: 40%;
 }
 
-.container {
+.container-items {
+    /*Arranges elements in a horizontal row.*/
+    height: 100px;
     margin-top: 20px;
     display: flex;
     flex-direction: row;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -34,4 +40,14 @@ h1 {
     color: white;   
     border: 2px solid white;
     border-radius: 10%;
+}
+
+.page-header {
+    height: 120px;
+    background-color: #2d353b;
+}
+
+.book-items {
+    background-color: white;
+    height: 980;
 }
