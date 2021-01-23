@@ -36,12 +36,19 @@ h1 {
 
 .page-header a {
     height: 20px;
-    margin: 20px 45px 0 auto; 
+    margin: 20px 20px 0 auto; 
     padding: 10px;
     text-decoration: none;
     color: white;   
     border: 2px solid white;
-    border-radius: 10%;
+}
+
+.page-header a:hover {
+    background-color: rgba(110, 94, 61, 0.7);
+}
+
+.btns {
+    margin: 30px 10px 0 auto;
 }
 
 .page-header {
@@ -94,7 +101,49 @@ h1 {
     font-size: 12px;
     background-color: rgba(44,38,26, 0.9);
     text-transform: uppercase;
+    }
 
+    .btn-edit:hover {
+        background-color: rgba(110, 94, 61, 0.9);
+    }
+
+    .new-item-form {
+        width: 450px;
+        height: 410px;
+        margin: -250px 0 0 600px;        
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 2%;
+        box-shadow: 0px 3px 5px  rgba(0,0,0,0.3);
+
+    }
+
+    .text-form {
+        width: 300px;
+        height: 30px; 
+    }
+
+    .new-item-form label {
+        margin: 5px 20px 0 -55px;
+        width: 120px;
+    }
+
+    .new-item-form input {
+        width: 200px;
+    }
+
+    .new-item-form h2 {
+        margin-left: -40px;
+    }
+
+    .new-item-form  #submit {
+        margin-top: 30px;
+        height: 40px;
+        width: 150px;
+        text-align: center;
     }
 
 

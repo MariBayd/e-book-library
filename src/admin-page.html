@@ -13,7 +13,10 @@
                          <img src="css/img/books-logo.jfif">
                      </div>
                  <h1>Библиотека</h1>
+                 <div class="btns">
+                <a id="newBook" href="#">Добавить книгу</a>
                 <a href="main.html">Выйти</a>
+                </div>
                 </div>
             </div>
 
@@ -32,9 +35,36 @@
                     </div>
                 </div>
 
+                <div>
+                    <div class="new-item-form">
+                        <h2>Добавление книги</h2>
+                        <div class="container-items text-form">
+                            <label for="title">Название:</label>
+                            <input name="title" id="title" type="text">
+                        </div>
+                        <div class="container-items text-form">
+                            <label for="author">Автор:</label>
+                            <input name="author" id="author" type="text">
+                        </div>
+                        <div class="container-items text-form">
+                            <label for="year">Год издания:</label>
+                            <input name="year" id="year" type="text">
+                        </div>
+                        <div class="container-items text-form">
+                            <label for="genre">Жанр:</label>
+                            <input name="genre" id="genre" type="text">
+                        </div>
+                        <div class="container-items text-form">
+                            <label for="book-cover">Обложка:</label>
+                            <input name="book-cove" id="book-cove" type="text">
+                        </div>
+                        <input class="btn-edit" type="submit" value="Добавить" id="submit">
+                    </div>
+                </div>
+
             </div>
         </div>
-
+        <script src="script.js"></script>
     </body>
 
     </html>
