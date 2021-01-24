@@ -83,11 +83,6 @@ h1 {
     background-color: white;
 }
 
-.genre-tag p {
-    font-style: oblique;
-    font-weight: bold;
-}
-
 .name-book {
     font-weight: bold;
     font-size: 16px;
@@ -145,13 +140,12 @@ h1 {
 
     .new-item-form  #submit {
         margin-top: 20px;
-        height: 40px;
-        width: 150px;
         text-align: center;
     }
 
-    .new-item-form .close {
+     .close {
         margin: 5px 15px 0 auto;
+        padding: 0 5px 0 5px;
         text-decoration: none;
     }
 
