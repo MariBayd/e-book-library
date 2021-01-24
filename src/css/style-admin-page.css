@@ -83,6 +83,11 @@ h1 {
     background-color: white;
 }
 
+.genre-tag p {
+    font-style: oblique;
+    font-weight: bold;
+}
+
 .name-book {
     font-weight: bold;
     font-size: 16px;
@@ -108,8 +113,8 @@ h1 {
     }
 
     .new-item-form {
-        width: 450px;
-        height: 410px;
+        width: 455px;
+        height: 425px;
         margin: -250px 0 0 600px;        
         display: none;
         flex-direction: column;
@@ -118,7 +123,6 @@ h1 {
         background-color: white;
         border-radius: 2%;
         box-shadow: 0px 3px 5px  rgba(0,0,0,0.3);
-
     }
 
     .text-form {
@@ -140,10 +144,15 @@ h1 {
     }
 
     .new-item-form  #submit {
-        margin-top: 30px;
+        margin-top: 20px;
         height: 40px;
         width: 150px;
         text-align: center;
+    }
+
+    .new-item-form .close {
+        margin: 5px 15px 0 auto;
+        text-decoration: none;
     }
 
 
