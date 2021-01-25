@@ -1,5 +1,5 @@
-var item = document.querySelector('item');
-var bookItems = document.querySelector('book-items');
+var item = document.getElementById('first-book');
+var bookItems = document.getElementById('list-books');
 
 var newBook = document.getElementById('newBook'); //btn for add new book
 var newItemForm = document.querySelector('.new-item-form'); //form of adding new book
@@ -45,35 +45,40 @@ submitBtn.onclick = function() {
     
     let newImg = document.createElement('img');
     newImg.classList.add('item-img');
-    newImg.src = imgBook.value;
-    imgBook.value = "";
+    newImg.src = 'https://img3.labirint.ru/rc/e327455f841e177d148461cc417f8a0c/220x340/books71/701601/cover.jpg?1564208325';
+    //newImg.src = imgBook.value;
+    //imgBook.value = "";
 
     let bookDescr = document.createElement('div');
     bookDescr.classList.add('book-description');
  
     let newBookTitle = document.createElement('p');
-    newBookTitle.textContent = titleBook.value; 
+    newBookTitle.textContent = 'Муми Тролль';
+    //newBookTitle.textContent = titleBook.value; 
     newBookTitle.classList.add('name-book'); 
     newBookTitle.style.color = '#000000';
-    titleBook.value = "";
+    //titleBook.value = "";
 
     let newBookAuthor = document.createElement('p');
     newBookAuthor.classList.add('author-book');
-    newBookAuthor.textContent = authorBook.value;
+    newBookAuthor.textContent = 'Туве Янсон';
+    //newBookAuthor.textContent = authorBook.value;
     newBookAuthor.style.color = '#000000';
-    authorBook.value = "";
+    //authorBook.value = "";
 
     let newBookYear = document.createElement('p');
     newBookYear.classList.add('year-book');
-    newBookYear.textContent = `Год издания:${yearBook.value}`;
+    newBookYear.textContent = 'Год издания: 1977';
+    //newBookYear.textContent = `Год издания:${yearBook.value}`;
     newBookYear.style.color = '#000000';
-    yearBook.value = "";
+    //yearBook.value = "";
 
     let newBookGenre = document.createElement('p');
     newBookGenre.classList.add('genre-book');
-    newBookGenre.textContent =`Жанр:${genreBook.value}`;
+    newBookGenre.textContent = 'Жанр: детская литература';
+    //newBookGenre.textContent =`Жанр:${genreBook.value}`;
     newBookGenre.style.color = '#000000';
-    genreBook.value = "";
+    //genreBook.value = "";
 
     let newButton = document.createElement('a');
     newButton.classList.add('btn-edit');
@@ -89,7 +94,7 @@ submitBtn.onclick = function() {
     bookDescr.appendChild(newButton);
 
     //insert new html code in admin-page.html
-    document.body.insertBefore(newItem, item); 
+    bookItems.insertBefore(newItem, item); 
     //close form
     newItemForm.style.display = "none";
     
