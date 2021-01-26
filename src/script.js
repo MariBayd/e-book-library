@@ -1,12 +1,17 @@
 var item = document.getElementById('first-book');
-var bookItems = document.getElementById('list-books');
+var bookItems = document.getElementById('list-books');//list of all books
+var items = []; //array for list of books
+items.push(item);
+
+var closeItem = document.getElementById('close-book');
 
 var newBook = document.getElementById('newBook'); //btn for add new book
 var newItemForm = document.querySelector('.new-item-form'); //form of adding new book
+var bookDescr = document.querySelector('book-description');
 
 var closeFormBtn = document.getElementById('closeBtn'); //btn for close form
+var submitBtn = document.getElementById('submit'); //btn for adding new book
 
-var submitBtn = document.getElementById('submit');
 
 //get elemets from html
 var titleBook = document.getElementById('title');
@@ -33,24 +38,48 @@ closeFormBtn.onclick = function() {
     newItemForm.style.display = "none";
 }
 
+closeItem.onclick = function(event) {//to do
+    let target = event.target;
+   
+    if (target.classList.contains("close-item")) {
+        
+    }
+}
+
+item.onclick = function(event) { //to do
+    let target = event.target;
+
+    if (target.classList.contains("btn-edit")) {
+        
+    }
+}
+
 //create new book 
 submitBtn.onclick = function() {
+   
     //create new obj of book
     let newBook = new NewBook(titleBook, authorBook, yearBook, genreBook);//create new js object
+    items.push(newBook);
 
     //create html code for new book
     let newItem = document.createElement('div');
     newItem.classList.add('item');
     newItem.classList.add('container-items');
-    
+
+    let newClose = document.createElement('a');
+    newClose.classList.add('close');
+    newClose.classList.add('close-item');
+    newClose.textContent = 'X';
+    newClose.href = "#";
+
     let newImg = document.createElement('img');
     newImg.classList.add('item-img');
     newImg.src = 'https://img3.labirint.ru/rc/e327455f841e177d148461cc417f8a0c/220x340/books71/701601/cover.jpg?1564208325';
     //newImg.src = imgBook.value;
     //imgBook.value = "";
 
-    let bookDescr = document.createElement('div');
-    bookDescr.classList.add('book-description');
+    let newBookDescr = document.createElement('div');
+    newBookDescr.classList.add('book-description');
  
     let newBookTitle = document.createElement('p');
     newBookTitle.textContent = 'Муми Тролль';
@@ -81,17 +110,19 @@ submitBtn.onclick = function() {
     //genreBook.value = "";
 
     let newButton = document.createElement('a');
-    newButton.classList.add('btn-edit');
+    newButton.classList.add('btn');
     newButton.textContent = 'Редактировать';
 
     //create item with book
+   
     newItem.appendChild(newImg);
-    newItem.appendChild(bookDescr);
-    bookDescr.appendChild(newBookTitle);
-    bookDescr.appendChild(newBookAuthor);
-    bookDescr.appendChild(newBookYear);
-    bookDescr.appendChild(newBookGenre);
-    bookDescr.appendChild(newButton);
+    newItem.appendChild(newBookDescr);
+    newBookDescr.appendChild(newClose);
+    newBookDescr.appendChild(newBookTitle);
+    newBookDescr.appendChild(newBookAuthor);
+    newBookDescr.appendChild(newBookYear);
+    newBookDescr.appendChild(newBookGenre);
+    newBookDescr.appendChild(newButton);
 
     //insert new html code in admin-page.html
     bookItems.insertBefore(newItem, item); 
